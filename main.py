@@ -2,6 +2,7 @@ import aiohttp
 import asyncio
 import datetime
 import json
+import sys
 
 
 async def fetch_exchange_rates(date):
@@ -37,7 +38,6 @@ async def get_exchange_rates_for_last_n_days(n):
 
 
 if __name__ == "__main__":
-    import sys
 
     if len(sys.argv) != 2:
         print("Usage: python main.py <number_of_days>")
